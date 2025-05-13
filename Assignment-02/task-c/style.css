@@ -1,0 +1,417 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Main Container of Form */
+.form-container {
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    max-width: 1500px;
+    margin: 40px auto;
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left Side */
+.left-side {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    height: 790px;
+    background-color: #364cf5;
+    border-radius: 20px;
+    padding: 30px;
+    color: #dce8fd;
+    font-size: 16px;
+}
+
+.left-side h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.left-side .bold-para {
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.para {
+    margin-top: 60px;
+    font-size: 18px;
+    color: #879ef8;
+}
+
+/* Slider Content */
+.slider {
+    width: 100%;
+    max-width: 390px;
+    background-color: #241df2;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.slider p {
+    font-size: 15px;
+}
+
+img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+    right: 150px;
+}
+
+.slider-dot {
+    margin: 160px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #dce8fd;
+}
+
+.dot1, .dot2 {
+    background-color: #dce8fd;
+}
+
+.dot:hover {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Right Side */
+.right-side {
+    flex: 1;
+    max-width: 970px;
+    min-width: 300px;
+    height: 790px;
+    padding: 40px;
+    color: black;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.right-side h1 {
+    margin-top: 20px;
+}
+
+.right-side .right-para {
+    font-size: 18px;
+}
+
+.right-para a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3f38f5;
+}
+
+label {
+    color: #919191;
+}
+
+.looking-for {
+    padding-top: 60px;
+}
+
+.radio-border {
+    border: 2px solid #979797;
+    padding: 12px 250px 12px 20px;
+    border-radius: 5px;
+    margin-right: 100px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.radio-border:active {
+    border-color: #3f38f5;
+}
+
+.input-style {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #d0d4d8;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.input-style:focus {
+    outline: none;
+}
+
+button {
+    background-color: #3f38f5;
+    padding: 12px 85px;
+    border: none;
+    border-radius: 5px;
+    color: #dce8fd;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #364cf5;
+}
+
+.btn {
+    padding: 12px 115px;
+}
+
+/* Responsive Design */
+
+@media only screen and (min-width: 1025px) and (max-width: 1102px){
+    .radio-border {
+        padding: 12px 140px 12px 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .image-text {
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        text-align: left;
+    }
+
+    .slider-dot {
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .radio-border {
+        padding: 12px 80px 12px 20px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .left-side {
+        height: auto;
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    .left-side .bold-para {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .para {
+        font-size: 17px;
+        margin-top: 40px;
+    }
+
+    .slider p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .image-text {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        text-align: left;
+    }
+
+    .slider-dot {
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .right-side h1 {
+        font-size: 26px;
+    }
+
+    .radio-border {
+        padding: 12px 50px 12px 20px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .input-style {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .form-container {
+        margin: 15px auto;
+        border-radius: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .left-side {
+        height: auto;
+        min-height: 450px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .right-side {
+        height: auto;
+        min-height: 450px;
+        padding: 20px;
+        margin-left: 0;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .left-side h3 {
+        font-size: 18px;
+    }
+
+    .left-side .bold-para {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .para {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .slider {
+        padding: 12px;
+        margin-top: 40px;
+        border-radius: 15px;
+    }
+
+    .slider p {
+        font-size: 13px;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    .image-text {
+        position: static;
+        margin-top: 10px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .image-text h4 {
+        font-size: 14px;
+    }
+
+    .image-text p {
+        font-size: 12px;
+    }
+
+    .slider-dot {
+        margin: 15px 0;
+        justify-content: center;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dot:hover {
+        width: 10px;
+        height: 10px;
+    }
+
+    .right-side h1 {
+        font-size: 22px;
+    }
+
+    .right-side .right-para {
+        font-size: 16px;
+    }
+
+    .looking-for {
+        padding-top: 40px;
+    }
+
+    .radio-border {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 8px 0;
+        font-size: 13px;
+        text-align: left;
+        border-radius: 5px;
+    }
+
+    .input-style {
+        padding: 10px;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}

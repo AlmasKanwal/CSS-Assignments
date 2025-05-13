@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Signup Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main Container of Form -->
+    <div class="form-container">
+
+        <div class="container">
+            <!-- Left Side -->
+        <div class="left-side">
+            <h3>Fleeso</h3>
+            <p class="bold-para">Start your journey with us.</p>
+            <p class="para">Discover the world's best community of freelancers and businss owners.</p>
+
+            <!-- Slider Content -->
+             <div class="slider">
+                <p>Simply unbelievable! I am really satisfied with my pojects and business. This is absolutely wonderul!</p>
+                <img src="./images/pic.jpeg" alt="My Pic">
+                <div class="image-text">
+                    <h4>Almas Kanwal</h4>
+                    <p>Developer</p>
+                </div>
+             </div>
+
+             <!-- Slider Dot -->
+              <div class="slider-dot">
+                <div class="dot dot1"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+        </div>
+
+        <!-- Right Side -->
+         <div class="right-side">
+            <h1>Signup</h1>
+            <p class="right-para">Have an account? <a href="./signin.html">Signin</a></p>
+
+            <form action="" class="looking-for">
+                <label>Looking for?</label>
+
+                <br><br>
+                
+                <label for="radio-btn-1" class="radio-border"><input type="radio" id="radio-btn-1" value="Projects" name="choice">Projects</label>
+                <label for="radio-btn-2" class="radio-border"><input type="radio" id="radio-btn-2" value="Designs" name="choice">Designs</label>
+
+                <br><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="abc@gmail.com" class="input-style">
+
+                <label for="password">Password</label>
+                <input type="password" maxlength="12" id="password" placeholder="Enter Password" class="input-style">
+
+                <label for="search">Select Skills(optional)</label>
+                <input type="text" id="search" placeholder="Type to search" class="input-style">
+                
+            </form>
+
+            <button>Create Account</button>
+         </div>
+
+        </div>
+
+    </div>  
+</body>
+</html>

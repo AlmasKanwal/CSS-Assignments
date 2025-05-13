@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Main Container */
+.main-container{
+    width: 90%;
+    height: 80vh;
+    max-width: 1000px;
+    background-color: #f5f5f5;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 1em;
+    margin: 4em auto;
+    text-align: center;
+}
+
+/* Left Side */
+.left-container{
+    width: 42%;
+    height: 600px;
+    background-color: #a03d3f;
+    margin: 5em 0;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-left: -270px;
+}
+
+.icons{
+    width: 100%;
+    position: absolute;
+    padding: 1em;
+}
+
+.share{
+    font-size: 2em;
+    color: #f5f5f5;
+    float: left;
+}
+
+.heart{
+    font-size: 2em;
+    color: #f5f5f5;
+    float: right;
+}
+
+.hero-img-box{
+    position: relative;
+    height: 340px;
+}
+
+.hero-img{
+    width: 360px;
+    position: absolute;
+    top: 18%;
+    right: 25%;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.75));
+}
+
+.apple-list-box{
+    background-color: #f5f5f5;
+    margin-top: 7em;
+    height: 150px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 1em;
+}
+
+.apple-list-box img{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 0.5em;
+    padding: 8px;
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+/* Right Side */
+.right-container{
+    width: 50%;
+    height: 60vh;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 7%;
+    padding: 1em 0;
+}
+
+.right-side{
+    margin: 4em 0;
+    margin-left: 40px;
+}
+
+.right-side h1{
+    font-size: 2.75em;
+}
+
+.right-side .code{
+    color: #4a4949;
+    font-size: 22px;
+}
+
+.right-side .price{
+    font-size: 35px;
+}
+
+.right-side .price span{
+    font-size: 2.5em;
+    color: #a03d3f;
+}
+
+.right-side .color-choice{
+    color: #4a4949;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.apple-choice img{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 0.5em;
+    padding: 8px;
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+.Benefit{
+    color: #4a4949;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.right-side ul li{
+    font-size: 22px;
+    margin-left: 20px;
+    font-family: serif;
+}
+
+.right-side button{
+    padding: 15px 20px 15px 20px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    background-color: #a03d3f;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
