@@ -191,7 +191,7 @@ button:hover {
     padding: 12px 115px;
 }
 
-/* Responsive Design */
+/* Responsive Design for All Devices */
 
 @media only screen and (min-width: 1025px) and (max-width: 1102px){
     .radio-border {
