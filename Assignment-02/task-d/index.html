@@ -260,29 +260,488 @@
 
         <!-- ================== Content Area Start ================== -->
 
-        <!-- <div class="main-content">
+    <div class="content-container">
 
-            <!-- Side Navbar -->
-            <header class="side-nav">
-                <div class="input-theme"><input type="text" placeholder="Filter"><i class="fa-solid fa-filter"></i></div>
-                <nav>
-                    <ul>
-                        <li></li>
-                    </ul>
+        <div class="main">
+
+            <!-- Left Sidebar Start -->
+            <aside class="left-side-nav">
+
+                <div class="filter-sticky">
+                    <div class="input-theme">
+                        <!-- <label for="filter" class="visually-hidden">Filter sidebar</label> -->
+                        <input type="text" id="filter" placeholder="Filter" aria-label="Filter sidebar">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                </div>
+
+                <span class="css-content"><a href="#css-info">Css</a></span>
+
+                <nav aria-label="Sidebar navigation">
+
+                    <div class="gap-line-nav">
+
+                        <!-- Section Wise Nav Links -->
+                         <!-- 1st Sec -->
+                        <div class="main-heading">
+                            <a href="#">Beginner's tutorials</a>
+                            <a href="#" class="sub-heading-para">Your first website styling the content</a>
+                        </div>
+
+                        <details>
+                            <summary><a href="#">CSS styling basics</a></summary>
+                            <ul>
+                                <li><a href="#">What is CSS?</a></li>
+                                <li><a href="#">CSS getting started</a></li>
+                                <li><a href="#">Challenge: biography page</a></li>
+                                <li><a href="#">Basic Selectors</a></li>
+                                <li><a href="#">Pseudo-classes and elements</a></li>
+                                <li><a href="#">Combinators</a></li>
+                                <li><a href="#">Box model</a></li>
+                                <li><a href="#">Handling conflicts</a></li>
+                                <li><a href="#">Values and units</a></li>
+                                <li><a href="#">Sizing</a></li>
+                                <li><a href="#">Backgrounds and borders</a></li>
+                                <li><a href="#">Overflow</a></li>
+                                <li><a href="#">Images, media, forms</a></li>
+                                <li><a href="#">Styling tables</a></li>
+                                <li><a href="#">Debugging CSS</a></li>
+                                <li><a href="#">Challenge: Business card</a></li>
+                                <li><a href="#">Challenge: Fancy letterhead</a></li>
+                                <li><a href="#">Challenge: Fancy box styles</a></li>
+                            </ul>
+                        </details>
+
+                         <details>
+                            <summary><a href="#">CSS text styling</a></summary>
+                            <ul>
+                                <li><a href="#">Text and font fundamentals</a></li>
+                                <li><a href="#">Styling lists</a></li>
+                                <li><a href="#">Styling links</a></li>
+                                <li><a href="#">Web fonts</a></li>
+                                <li><a href="#">Challenge: Community school homepage</a></li>
+                            </ul>
+                        </details>
+
+                         <details>
+                            <summary><a href="#">CSS layout</a></summary>
+                            <ul>
+                                <li><a href="#">Introduction</a></li>
+                                <li><a href="#">Floats</a></li>
+                                <li><a href="#">Positioning</a></li>
+                                <li><a href="#">Flexbox</a></li>
+                                <li><a href="#">CSS grid layout</a></li>
+                                <li><a href="#">Responsive design</a></li>
+                                <li><a href="#">Media queries Box model</a></li>
+                                <li><a href="#">Challenge: Fundamental layout</a></li>
+                            </ul>
+                        </details>
+
+                        <!-- 2nd Sec -->
+                        <div class="main-heading">
+                            <a href="#">CSS Reference</a>
+                        </div>
+
+                        <details>
+                            <summary><a href="#">Modules</a></summary>
+                            <ul>
+                                <li><a href="#">CSS anchor positioning</a></li>
+                                <li><a href="#">CSS animations</a></li>
+                                <li><a href="#">CSS backgrounds and borders</a></li>
+                                <li><a href="#">CSS basic user interface</a></li>
+                                <li><a href="#">CSS box alignment</a></li>
+                                <li><a href="#">CSS box model</a></li>
+                                <li><a href="#">CSS box sizing</a></li>
+                                <li><a href="#">CSS cascading and inheritance</a></li>
+                                <li><a href="#">CSS color adjustment</a></li>
+                                <li><a href="#">CSS colors</a></li>
+                                <li><a href="#">CSS compositing and blending</a></li>
+                                <li><a href="#">CSS conditional rules</a></li>
+                                <li><a href="#">CSS containment</a></li>
+                                <li><a href="#">CSS counter styles</a></li>
+                                <li><a href="#">CSS custom properties for cascading variables</a></li>
+                                <li><a href="#">CSS display</a></li>
+                                <li><a href="#">CSS filter effects</a></li>
+                                <li><a href="#">CSS flexible box layout</a></li>
+                                <li><a href="#">CSS font loading</a></li>
+                                <li><a href="#">CSS fonts</a></li>
+                                <li><a href="#">CSS fragmentation</a></li>
+                                <li><a href="#">CSS generated content</a></li>
+                                <li><a href="#">CSS grid layout</a></li>
+                                <li><a href="#">CSS images</a></li>
+                                <li><a href="#">CSS inline layout</a></li>
+                                <li><a href="#">CSS lists and counters</a></li>
+                                <li><a href="#">CSS logical properties and values</a></li>
+                                <li><a href="#">CSS masking</a></li>
+                                <li><a href="#">CSS media queries</a></li>
+                                <li><a href="#">CSS motion path</a></li>
+                                <li><a href="#">CSS multi-column layout</a></li>
+                                <li><a href="#">CSS namespaces</a></li>
+                                <li><a href="#">CSS nesting</a></li>
+                                <li><a href="#">CSS overflow</a></li>
+                                <li><a href="#">CSS overscroll behavior</a></li>
+                                <li><a href="#">CSS paged media</a></li>
+                                <li><a href="#">CSS positioned layout</a></li>
+                            </ul>
+                        </details>
+
+                         <details>
+                            <summary><a href="#">Properties</a></summary>
+                            <ul>
+                                <li><a href="#">-moz-*</a></li>
+                                <li><a href="#">webkit-*</a></li>
+                                <li><a href="#">align-*</a></li>
+                                <li><a href="#">animation-*</a></li>
+                                <li><a href="#">background-*</a></li>
+                            </ul>
+                        </details>
+
+                         <details>
+                            <summary><a href="#">Selectors</a></summary>
+                            <ul>
+                                <li><a href="#">& nesting selector</a></li>
+                                <li><a href="#">Attribute selectors</a></li>
+                                <li><a href="#">Class selectors</a></li>
+                                <li><a href="#">ID selectors</a></li>
+                                <li><a href="#">Type selectors</a></li>
+                                <li><a href="#">Universal selectors</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Combinators</a></summary>
+                            <ul>
+                                <li><a href="#">Child combinator</a></li>
+                                <li><a href="#">Column combinator <i class="fas fa-flask"></i></a></li>
+                                <li><a href="#">Descendant combinator</a></li>
+                                <li><a href="#">Namespace separator</a></li>
+                                <li><a href="#">Next-sibling combinator</a></li>
+                                <li><a href="#">Selector list</a></li>
+                                <li><a href="#">Subsequent-sibling combinator</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Pseudo-classes</a></summary>
+                            <ul>
+                                <li><a href="#">:active</a></li>
+                                <li><a href="#">:any-link</a></li>
+                                <li><a href="#">:autofill</a></li>
+                                <li><a href="#">:blankExperimental <i class="fas fa-flask"></i></a></li>
+                                <li><a href="#">:buffering</a></li>
+                                <li><a href="#">:checked</a></li>
+                                <li><a href="#">:currentExperimental <i class="fas fa-flask"></i></a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Pseudo-elements</a></summary>
+                            <ul>
+                                <li><a href="#">::after</a></li>
+                                <li><a href="#">::backdrop</a></li>
+                                <li><a href="#">::before</a></li>
+                                <li><a href="#">::checkmarkExperimental <i class="fas fa-flask"></i></a></li>
+                                <li><a href="#">::columnExperimental <i class="fas fa-flask"></i></a></li>
+                                <li><a href="#">::cue</a></li>
+                                <li><a href="#">::first-letter</a></li>
+                                <li><a href="#">::first-line</a></li>
+                                <li><a href="#">::grammar-error</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">At-rules</a></summary>
+                            <ul>
+                                <li><a href="#">@charset</a></li>
+                                <li><a href="#">@color-profile</a></li>
+                                <li><a href="#">@container</a></li>
+                                <li><a href="#">@counter-style</a></li>
+                                <li><a href="#">@document <i class="fa-solid fa-triangle-exclamation error"></i> <i class="fa-solid fa-trash"></i></a></li>
+                                <li><a href="#">@font-face</a></li>
+                                <li><a href="#">@font-feature-values</a></li>
+                            </ul>
+                        </details>
+
+                        <!-- 3rd Sec -->
+                         <div class="main-heading">
+                            <a href="#">Guides</a>
+                        </div>
+
+                        <details>
+                            <summary><a href="#">Animations</a></summary>
+                            <ul>
+                                <li><a href="#">Animatable CSS properties</a></li>
+                                <li><a href="#">Using CSS animations</a></li>
+                            </ul>
+                        </details>
+
+                         <details>
+                            <summary><a href="#">Backgrounds and Borders</a></summary>
+                            <ul>
+                                <li><a href="#">Using multiple backgrounds</a></li>
+                                <li><a href="#">Resizing background images</a></li>
+                                <li><a href="#">Scaling of SVG backgrounds</a></li>
+                            </ul>
+                        </details>
+
+                         <details>
+                            <summary><a href="#">Box alignment</a></summary>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Box alignment in block layout</a></li>
+                                <li><a href="#">Box alignment in flexbox</a></li>
+                                <li><a href="#">Box alignment in grid layout</a></li>
+                                <li><a href="#">Box alignment in multi-column layout</a></li>
+                                <li><a href="#">Universal selectors</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Box model</a></summary>
+                            <ul>
+                                <li><a href="#">Introduction to the CSS basic box model</a></li>
+                                <li><a href="#">Mastering margin collapsing</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Colors</a></summary>
+                            <ul>
+                                <li><a href="#">Applying color to HTML</a></li>
+                                <li><a href="#">Color values</a></li>
+                                <li><a href="#">Using relative colors</a></li>
+                                <li><a href="#">Using color wisely</a></li>
+                                <li><a href="#">Accessibility: Colors and luminance</a></li>
+                                <li><a href="#">Accessibility: Color contrast</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Containment</a></summary>
+                            <ul>
+                                <li><a href="#">Using CSS containment</a></li>
+                                <li><a href="#">CSS container queries</a></li>
+                                <li><a href="#">Using container size</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Fonts</a></summary>
+                            <ul>
+                                <li><a href="#">OpenType font features guide</a></li>
+                                <li><a href="#">Variable fonts guide</a></li>
+                                <li><a href="#">Web Open Font Format (WOFF)</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Media queries</a></summary>
+                            <ul>
+                                <li><a href="#">Using media queries</a></li>
+                                <li><a href="#">Using media queries for accessibility</a></li>
+                                <li><a href="#">Printing</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Shapes</a></summary>
+                            <ul>
+                                <li><a href="#">Overview of shapes</a></li>
+                                <li><a href="#">Shapes from box values</a></li>
+                                <li><a href="#">Shapes from images</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Text</a></summary>
+                            <ul>
+                                <li><a href="#">Wrapping and breaking text</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Transforms</a></summary>
+                            <ul>
+                                <li><a href="#">Using CSS transforms</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Transitions</a></summary>
+                            <ul>
+                                <li><a href="#">Using CSS transitions</a></li>
+                                <li><a href="#">Shapes from box values</a></li>
+                                <li><a href="#">Shapes from images</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary><a href="#">Values and units</a></summary>
+                            <ul>
+                                <li><a href="#">Value definition syntax</a></li>
+                                <li><a href="#">Numeric data types</a></li>
+                                <li><a href="#">Textual data types</a></li>
+                            </ul>
+                        </details>
+
+                        <!-- 4th Sec -->
+                         <div class="main-heading">
+                            <a href="#">CSS Layout cookbook</a>
+                        </div>
+
+                        
+                            <ul>
+                                <li><a href="#">Recipe: Media objects</a></li>
+                                <li><a href="#">Column layouts</a></li>
+                                <li><a href="#">Center an element</a></li>
+                                <li><a href="#">Sticky footers</a></li>
+                                <li><a href="#">Split navigation</a></li>
+                                <li><a href="#">Breadcrumb navigation</a></li>
+                                <li><a href="#">List group with badges</a></li>
+                                <li><a href="#">Pagination</a></li>
+                                <li><a href="#">Card</a></li>
+                                <li><a href="#">Grid wrapper</a></li>
+                            </ul>
+
+                        <!-- 5th Sec -->
+                         <div class="main-heading">
+                            <a href="#">Tools</a>
+                        </div>
+
+                            <ul>
+                                <li><a href="#">Color picker tool</a></li>
+                                <li><a href="#">Box-shadow generator</a></li>
+                                <li><a href="#">Border-image generator</a></li>
+                                <li><a href="#">Border-radius generator</a></li>
+                            </ul>
+
+                    </div>
+
                 </nav>
-            </header>
+
+            </aside>
+
+            <!-- Main Middle Content Start -->
+            <main>
+
+                <!-- CSS Intoduction -->
+                <section class="css-intro">
+
+                    <h1 id="css-info">CSS: Cascading Style Sheets</h1>
+
+                    <p><strong>Cascading Style Sheets (CSS)</strong> is a <a href="#">stylesheet</a> language used to describe the presentation of a document written in <a href="#">HTML</a> or <a href="#">XML</a> (including XML dialects such as <a href="#">SVG</a>, <a href="#">MathML</a> or <a href="#">XHTML</a>). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+
+                    <p>CSS is among the core languages of the <strong>open web</strong> and is standardized across Web browsers according to <a href="#">W3C specifications <i class="fas fa-up-right-from-square"></i></a>. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now just "CSS" with individual CSS modules having version numbers.</p>
+
+                    <p>After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to <a href="#">develop and release recommendations separately per module <i class="fas fa-up-right-from-square"></i></a>. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of <a href="#">the latest stable state of the CSS specification <i class="fas fa-up-right-from-square"></i></a> and individual modules progress. CSS modules now have version numbers, or levels, such as <a href="#">CSS Color Module Level 5 <i class="fas fa-up-right-from-square"></i></a>.</p>
+                    
+                </section>
+
+                <!-- Beginner's tutorials -->
+                <section class="beginner-tutorial">
+
+                    <h2 id="article-1"><a href="">Beginner's tutorials</a></h2>
+
+                    <a href="">Your first website: Styling the content</a>
+                    <p>This article provides a brief tour of what CSS is and how to use it, aimed at people who are completely new to web development.</p>
+
+                    <a href="">CSS styling basics</a>
+                    <p>Our <a href="">Learn web development</a> section's CSS basics module teaches CSS fundamentals from the ground up.</p>
+
+                    <a href="">CSS text styling</a>
+                    <p>Here we look at fundamentals including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.</p>
+
+                    <a href="">CSS layout</a>
+                    <p>Now it's time to look at how to correctly lay out your boxes in relation to one another, and the browser viewport. This module looks at floats, positioning, other modern layout tools, and building responsive designs that will adapt to different devices, screen sizes, and resolutions.</p>
+
+                </section>
+
+                <!-- Reference -->
+                 <section class="reference">
+
+                    <h2 id="article-2"><a href="">Reference</a></h2>
+
+                    <p>The <a href="">CSS reference</a> is an exhaustive reference for seasoned Web developers, describing every property and concept of CSS, including:</p>
+
+                    <ul>
+                        <li>The <a href="">syntax and forms of the language</a></li>
+                        <li><a href="">Specificity</a>, <a href="">inheritance</a>, and <a href="">the cascade</a></li>
+                        <li><a href="">CSS selectors</a>, <a href="">including pseudo-elements</a>, <a href="">nesting</a>, <a href="">scoping</a> and <a href="">shadow parts</a></li>
+                        <li><a href="">CSS at-rules</a>, including <a href="">media</a> and <a href="">container queries</a></li>
+                        <li><a href="">CSS values and units</a> module, including <a href="">numeric data types, textual data types</a> and <a href="">functional notations</a></li>
+                        <li><a href="">Box model</a> and <a href="">margin collapse</a></li>
+                        <li>The <a href="">containing block</a></li>
+                        <li><a href="">Stacking</a> and <a href="">block-formatting</a> contexts</li>
+                        <li><a href="">Initial</a>, <a href="">computed</a>, <a href="">used</a>, and <a href="">actual</a> values</li>
+                        <li><a href="">CSS shorthand properties</a></li>
+                        <li><a href="">CSS flexible box, multi-column</a> and <a href="">grid layout</a></li>
+                        <li><a href="">Animation</a>, <a href="">transitions</a>, and <a href="">transforms</a></li>
+                    </ul>
+
+                 </section>
+
+                 <!-- Cookbook -->
+                 <section class="cookbook">
+
+                    <h2 id="article-3"><a href="">Cookbook</a></h2>
+
+                    <p>The <a href="">CSS layout cookbook</a> aims to bring together recipes for common layout patterns, things you might need to implement in your sites. In addition to providing code you can use as a starting point in your projects, these recipes highlight the different ways layout specifications can be used and the choices you can make as a developer.</p>
+
+                 </section>
+
+                 <!-- Tools for CSS development -->
+                 <section class="tools-css">
+
+                    <h2 id="article-4"><a href="">Tools for CSS development</a></h2>
+
+                    <ul>
+                        <li>You can use the <a href="">W3C CSS Validation Service <i class="fas fa-up-right-from-square"></i></a> to check if your CSS is valid. This is an invaluable debugging tool.</li>
+                        <li><a href="">Firefox Developer Tools <i class="fas fa-up-right-from-square"></i></a> lets you view and edit a page's live CSS via the <a href="">Inspector</a> and <a href="">Style Editor</a> tools.</li>
+                        <li>The <a href="">Web Developer extension <i class="fas fa-up-right-from-square"></i></a> for Firefox lets you track and edit live CSS on watched sites.</li>
+                    </ul>
+
+                 </section>
+
+                 <!-- Meta bugs -->
+                  <section class="bugs">
+
+                    <h2 id="article-5"><a href="">Meta bugs</a></h2>
+
+                    <ul>
+                        <li>Firefox: Firefox bug 1323667 <i class="fas fa-up-right-from-square"></i></li>
+                    </ul>
+
+                  </section>
+
+                  <!-- See also -->
+                   <section class="see">
+
+                    <h2 id="article-6"><a href="">See also</a></h2>
+
+                    <ul>
+                        <li>Web languages to which CSS is often applied: <a href="">HTML</a>, <a href="">SVG</a>, <a href="">MathML</a>, <a href="">XHTML</a>, and <a href="">XML</a>.</li>
+                        <li><a href="">Stack Overflow questions about CSS <i class="fas fa-up-right-from-square"></i></a></li>
+                    </ul>
+
+                   </section>
+
+                   
+
+            </main>
+
+            <!-- Main Middle Content End -->
 
 
+            <!-- Right Sidebar Start --> 
+            <aside class="right-side-nav">
 
+            </aside>
 
+            <!-- Right Sidebar End -->
 
+        </div> 
 
-
-        </div> -->
-
-
-
-
+    </div>
 
 
 

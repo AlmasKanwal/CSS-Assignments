@@ -39,7 +39,7 @@ header .main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .main .logo-box {
@@ -159,7 +159,7 @@ header .main {
 }
 
 .dropdown-btn:hover {
-    background-color: #e6f0fa; 
+    background-color: #d7ebff; 
     color: #0066cc; 
     border-radius: 3px; 
 }
@@ -170,6 +170,7 @@ header .main {
     background-color: white;
     min-width: 320px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid #c4c0c0;
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
@@ -222,7 +223,7 @@ header .main {
 }
 
 .sub-navbar .main{
-    max-width: 1450px;
+    max-width: 1500px;
     display: flex;
     justify-content: space-between;
     padding: 3px 0;
@@ -253,20 +254,42 @@ header .main {
 
 
 /* ================== Content Area Start ================== */
+.content-container{
+    height: 100vh;
+}
 
-/* Side Navbar */
-/* .main-content{
-    background-color: #d0e7ff;
-    max-width: 1460px;
-    width: 100%;
-    height: inherit;
-    margin: 0 auto;
+.content-container .main{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.input-theme .fa-filter{
+/* Left Sidebar Start */
+
+.left-side-nav{
+    width: 20%;
+    overflow-y: scroll;
+    height: 100vh;
+    /* padding-bottom: 100px; */
+}
+
+.css-content{
+    padding: 10px 15px;
+    background-color: #d7ebff;
+    border-left: 2px solid #0066cc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-transform: uppercase;
+}
+
+.left-side-nav input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #c4c0c0;
+    border-radius: 15px;
+    outline: none;
+}
+
+.left-side-nav .input-theme .fa-filter{
     position: absolute;
     left: 12px;
     top: 10px;
@@ -274,14 +297,101 @@ header .main {
     font-size: 10px;
 }
 
-.side-nav input::placeholder{
+.left-side-nav .input-theme{
+       margin-bottom: 3.5em;
+       margin-top: 8px;
+} 
+
+.left-side-nav input::placeholder{
     text-align: center; 
     color: #888; 
 }
 
-.side-nav .input-theme{
-    margin-bottom: 25px;
-} */
+.left-side-nav a{
+    color: #686767;
+}
+
+.left-side-nav a:hover{
+    text-decoration: underline;
+}
+
+.left-side-nav nav{
+    margin-top: 1em;
+}
+
+.left-side-nav nav .main-heading{
+    margin-top: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+ 
+.main-heading .sub-heading-para{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.gap-line-nav{
+    line-height: 40px;
+    font-size: 13px;
+}
+
+.left-side-nav ul{
+    list-style: none;
+}
+
+.left-side-nav nav ul li {
+    margin: 0 10px;
+}
+
+details .fa-flask, .error{
+    color: #0066cc;
+}
+
+details .fa-trash{
+    color: #cc1e6f;
+}
+
+summary{
+    color: #444343;
+}
+
+.filter-sticky {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 5;
+    padding-bottom: 10px;
+}
+
+/* Left Sidebar End */
+
+
+/* Main Middle Content Start */
+
+main{
+    width: 60%;
+    background-color: #6f1cbd;
+    height: 100vh;
+}
+
+main section{
+    margin: 4em 3em;
+    background-color: #ffb7d9;
+}
+
+main section a:hover{
+    text-decoration: underline;
+}
+
+main section h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+section h1{
+    font-size: 2.5em;
+}
 
 
 
@@ -292,6 +402,69 @@ header .main {
 
 
 
+
+
+
+
+/* Left sidebar scroll: position: sticky and max-height: calc(100vh - 110px).
+Middle content height: Removed height: 100vh from main.
+Right sidebar effects: Added :target styling for TOC links. */
+
+
+/* Main Middle Content End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right Sidebar Start */
+
+.right-side-nav{
+    width: 20%;
+    background-color: #f58300;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Right Sidebar End */
 
 
 
