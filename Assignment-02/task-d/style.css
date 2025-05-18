@@ -40,6 +40,7 @@ header .main {
     align-items: center;
     justify-content: space-between;
     /* padding: 0 20px; */
+    
 }
 
 .main .logo-box {
@@ -75,12 +76,17 @@ header .main {
 .nav-info .fas {
     font-size: 1em;
     color: #686767;
-    margin-top: 2px;
+    margin-top: 4px;
+    padding-right: 10px;
 }
 
 .nav-info .theme{
     display: flex;
     align-items: center;
+}
+
+.nav-info .theme p{
+    text-align: center;
 }
 
 .nav-info p {
@@ -357,14 +363,6 @@ summary{
     color: #444343;
 }
 
-.filter-sticky {
-    position: sticky;
-    top: 0;
-    background: #fff;
-    z-index: 5;
-    padding-bottom: 10px;
-}
-
 /* Left Sidebar End */
 
 
@@ -372,13 +370,15 @@ summary{
 
 main{
     width: 60%;
-    background-color: #6f1cbd;
-    height: 100vh;
+    /* background-color: #eddcfd; */
+    height: 100%;
 }
 
 main section{
-    margin: 4em 3em;
-    background-color: #ffb7d9;
+    margin: 3em;
+    /* background-color: #ffcda4; */
+    font-size: 17px;
+    line-height: 1.8em;
 }
 
 main section a:hover{
@@ -389,82 +389,169 @@ main section h1{
     font-family: 'Roboto', sans-serif;
 }
 
-section h1{
+main section h1{
     font-size: 2.5em;
 }
 
+main section h1, h2{
+    padding-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+}
 
+main section h2{
+    font-size: 2em;
+}
 
+main section p{
+    padding: 0;
+}
 
+main section a{
+    color: #0066cc;
+    text-decoration: underline;
+}
+main section a:hover{
+    text-decoration: none;
+}
 
+main section .fas{
+    font-size: 10px;
+    color: #686767;
+}
 
+main section .dark-blue-link{
+    color: #2c167e;
+}
 
+main section h2 a{
+    color: #000000;
+    text-decoration: none;
+}
 
+main section h2 a:hover{
+    text-decoration: underline;
+}
 
+main .css-intro .intro-p{
+    padding-bottom: 1.9em;
+}
 
+main .beginner-tutorial .intro-p{
+    padding-bottom: 1.9em;
+}
 
+main .beginner-tutorial p{
+    padding-left: 1.2em;
+}
 
+main .reference .intro-p{
+    padding-bottom: 1.9em;
+}
 
+main section ul {
+    padding-left: 2em;
+}
 
-/* Left sidebar scroll: position: sticky and max-height: calc(100vh - 110px).
-Middle content height: Removed height: 100vh from main.
-Right sidebar effects: Added :target styling for TOC links. */
+main .mdn-help-box{
+    margin: 50px;
+    border: 1px solid #c4c0c0;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 17px;
+}
+
+main .help-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .mdn-help-box h2{
+    font-size: 2em;
+}
+
+main .mdn-help-box .yes-no-box{
+    display: flex; 
+    gap: 12px;
+}
+
+main .mdn-help-box .yes, .no{
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-size: 15px;
+}
+
+main .mdn-help-box .yes:hover{
+    background-color: #004100;
+    color: white;
+    transition: 1 sec ease-in;
+}
+
+main .mdn-help-box .no:hover{
+    background-color: #bb0c0c;
+    color: white;
+    transition: 6 sec ease-out;
+}
+
+main .mdn-help-box a{
+    color: #0066cc;
+}
+
+main .mdn-help-box p{
+    padding: 0;
+}
+
+main .help-cont .left h2{
+    padding-bottom: 0;
+}
+
+main .mdn-help-box .left h2, p, .yes-no-box{
+    margin-bottom: 12px;
+}
+
+main .mdn-help-box .bottom{
+    margin-top: 35px;
+}
 
 
 /* Main Middle Content End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Right Sidebar Start */
 
 .right-side-nav{
     width: 20%;
-    background-color: #f58300;
-    height: 100vh;
+    /* background-color: #ffdaaf; */
+    height: inherit;
 }
 
+.right-side-nav .toc p{
+    padding-left: 0;
+    font-size: 1.4em;
+    color: #000000;   
+    word-spacing: 5px;
+    margin-top: 2em;
+}
 
+.right-side-nav .toc ul{
+    list-style-type: none;
+}
 
+.right-side-nav .toc ul li a{
+    color: #686767;
+    font-size: 13px;
+    line-height: 40px;
+    padding-left: 1.5em;
+}
 
-
-
-
-
-
+.right-side-nav .toc ul li{
+    border-left: 2px solid #c0bebe;
+}
 
 
 /* Right Sidebar End */
 
+
+/* Right Sidebar */
 
 
