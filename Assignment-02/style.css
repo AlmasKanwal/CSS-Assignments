@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,24 +8,25 @@
 }
 
 html {
-    font-size: 16px; 
+    font-size: 16px;
+    background-color: #000000;
 }
 
 /* ************************ Header Start ************************ */
-header{
+header {
     background-color: #000000;
     max-width: 100vw;
     min-height: 80px;
     color: white;
 }
 
-.main{
+.main {
     max-width: 1800px;
     height: inherit;
     margin: 0 auto;
 }
 
-header .main{
+header .main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,29 +34,29 @@ header .main{
     flex-wrap: wrap;
 }
 
-header .main .logo{
+header .main .logo {
     font-size: 1.7em;
-    color:white;
+    color: white;
 }
 
-header .main .nav-links{
+header .main .nav-links {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-header .main nav a{
+header .main nav a {
     padding: 0.8em;
     color: white;
     transition: background 0.3s;
     border-radius: 6px;
 }
 
-header .main nav a:hover {
+header .main nav .nav-a:hover {
     background-color: #ea445a;
 }
 
-header .main nav .nav-btn{
+header .main nav .nav-btn {
     background-color: #ea445a;
     border: none;
     padding: 0.8em 1em;
@@ -66,92 +67,128 @@ header .main nav .nav-btn{
     transition: 0.3s;
 }
 
-header .main nav .nav-btn:hover{
+header .main nav .nav-btn:hover {
     border: 1px solid #ea445a;
-    background-color: transparent;
+    background: transparent;
     color: white;
 }
 
-.hameburger-menu{
+header .main .nav .btn-a {
+    background-color: none;
+}
+
+.hameburger-menu {
     display: none;
     font-size: 1.2rem;
     color: white;
     cursor: pointer;
 }
 
-header .main .menu-container{
+header .main .menu-container {
     position: relative;
 }
 
-/* ************************ Header End ************************ */
+#menu-toggle {
+    display: none;
+}
 
 /* ************************ Hero / Content Start ************************ */
-.hero{
-    background-color: aqua;
+.hero {
     padding: 2em 0;
 }
 
-.hero .main{
-    background-color: aqua;
+.hero .main {
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
 }
 
-.hero .projects-container{
-    background-color: blueviolet;
+.hero .projects-container {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 2em 3em;
 }
 
-.hero .projects-container .div{
-    width: 50%;
-    height: 50%;
-    background-color: chartreuse;
+.hero .projects-container .div {
+    width: 45%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.hero .projects-container .div img{
-    width: 60%;
+.hero .projects-container .div img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 6px;
 }
 
+.hero .projects-container .div h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin: 0.8em 0;
+}
 
+.hero .projects-container .div .social-icons {
+    display: flex;
+    gap: 1em;
+}
 
+.hero .projects-container .div .social-icons a {
+    color: #ea445a;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
 
+.hero .projects-container .div .social-icons a:hover {
+    color: #b83345;
+}
 
+/* ************************ Footer Start ************************ */
+footer {
+    background-color: #ea445a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+}
 
-
+footer i {
+    color: #fff;
+}
 
 /* ************************ Responsive Design ************************ */
-
-/* =========== Hameburger Menu Responsiveness =========== */
-@media (max-width: 950px){
-    .hameburger-menu{
+@media (max-width: 950px) {
+    .hameburger-menu {
         display: block;
         order: 2;
     }
 
-
     header .main .nav-links {
-        display: none; 
-        flex-direction: column; 
-        position: absolute; 
-        top: 80px; 
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
         left: 0;
         width: 100%;
         background-color: #000000;
         padding: 1em;
         gap: 0.5em;
         z-index: 1000;
-        transition: all 0.3s ease; 
+        transition: all 0.3s ease;
     }
 
-    .hameburger-menu:hover ~ .nav-links, .nav-links:hover {
-        display: flex; 
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
     }
 
     header .main nav a {
@@ -162,9 +199,25 @@ header .main .menu-container{
 
     header .main nav .nav-btn {
         margin-left: 0;
-        width: 100%; 
+        width: 100%;
         text-align: center;
+    }
+
+    .hero .projects-container .div {
+        width: 100%;
     }
 }
 
-/* =========== Hero Section / Content =========== */
+@media (max-width: 600px) {
+    header .main {
+        padding: 1em;
+    }
+
+    .hero .projects-container {
+        padding: 1em;
+    }
+
+    .hero .projects-container .div img {
+        max-width: 250px;
+    }
+}

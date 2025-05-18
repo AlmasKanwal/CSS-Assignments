@@ -87,12 +87,14 @@ header .main {
 
 .nav-info .theme p{
     text-align: center;
+    padding-top: 12px;
 }
 
 .nav-info p {
     color: #686767;
     font-weight: bold;
-    padding-left: 4px;
+    padding-left: 10px;
+    text-align: center;
 }
 
 .nav-info input[type="text"] {
@@ -552,6 +554,6 @@ main .mdn-help-box .bottom{
 /* Right Sidebar End */
 
 
-/* Right Sidebar */
+
 
 
