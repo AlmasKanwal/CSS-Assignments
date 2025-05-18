@@ -372,8 +372,8 @@ summary{
 
 main{
     width: 60%;
-    /* background-color: #eddcfd; */
     height: 100%;
+    overflow: hidden;
 }
 
 main section{

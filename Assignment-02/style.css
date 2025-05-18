@@ -88,10 +88,6 @@ header .main .menu-container {
     position: relative;
 }
 
-#menu-toggle {
-    display: none;
-}
-
 /* ************************ Hero / Content Start ************************ */
 .hero {
     padding: 2em 0;
@@ -166,11 +162,13 @@ footer i {
     color: #fff;
 }
 
-/* ************************ Responsive Design ************************ */
+/* ************************ Responsive Design Start ************************ */
 @media (max-width: 950px) {
     .hameburger-menu {
         display: block;
         order: 2;
+        padding: 0.8em;
+        z-index: 1001;
     }
 
     header .main .nav-links {
@@ -187,7 +185,8 @@ footer i {
         transition: all 0.3s ease;
     }
 
-    #menu-toggle:checked ~ .nav-links {
+    .hameburger-menu:hover ~ .nav-links,
+    .nav-links:hover {
         display: flex;
     }
 
@@ -221,3 +220,5 @@ footer i {
         max-width: 250px;
     }
 }
+
+/* ************************ Responsive Design End ************************ */
