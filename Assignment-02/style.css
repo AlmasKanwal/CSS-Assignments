@@ -7,9 +7,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-html {
-    font-size: 16px;
+body{
     background-color: #000000;
+    font-size: 16px;
 }
 
 /* ************************ Header Start ************************ */
@@ -73,20 +73,71 @@ header .main nav .nav-btn:hover {
     color: white;
 }
 
-header .main .nav .btn-a {
-    background-color: none;
+/* Dropdown Menu  */
+.dropdown {
+    display: none; 
 }
 
-.hameburger-menu {
-    display: none;
-    font-size: 1.2rem;
+.dropdown-menu {
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.dropdown-menu .fa-bars {
     color: white;
-    cursor: pointer;
 }
 
-header .main .menu-container {
-    position: relative;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    top: 40px;
+    right: 0;
+    margin-top: 10px;
 }
+
+.dropdown-content a {
+    color: white;
+    font-weight: bold;
+    padding: 12px 0;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.dropdown-content .nav-a:hover {
+    background-color: #ea445a;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown-content .nav-btn {
+    background-color: #ea445a;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dropdown-content .nav-btn:hover {
+    border: 1px solid #ea445a;
+    background: transparent;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ************************ Header End ************************ */
+
 
 /* ************************ Hero / Content Start ************************ */
 .hero {
@@ -149,6 +200,9 @@ header .main .menu-container {
     color: #b83345;
 }
 
+/* ************************ Hero / Content Start ************************ */
+
+
 /* ************************ Footer Start ************************ */
 footer {
     background-color: #ea445a;
@@ -159,47 +213,25 @@ footer {
 }
 
 footer i {
-    color: #fff;
+    color: white;
 }
+
+/* ************************ Footer End ************************ */
+
 
 /* ************************ Responsive Design Start ************************ */
 @media (max-width: 950px) {
-    .hameburger-menu {
-        display: block;
-        order: 2;
-        padding: 0.8em;
-        z-index: 1001;
+    header .main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown {
+        display: block; 
     }
 
     header .main .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #000000;
-        padding: 1em;
-        gap: 0.5em;
-        z-index: 1000;
-        transition: all 0.3s ease;
-    }
-
-    .hameburger-menu:hover ~ .nav-links,
-    .nav-links:hover {
-        display: flex;
-    }
-
-    header .main nav a {
-        padding: 0.8em;
-        width: 100%;
-        text-align: center;
-    }
-
-    header .main nav .nav-btn {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
+        display: none; 
     }
 
     .hero .projects-container .div {
