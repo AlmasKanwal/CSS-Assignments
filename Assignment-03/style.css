@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* :root{
+    --bgColor: #51d351;
+    --textColor: #51d351;
+    --borderColor: #51d351;
+    --boxShadow: #51d351;
+} */
+
+:root {
+    --bgColor: #F4A261; 
+    --textColor: #F4A261; 
+    --borderColor: #F4A261; 
+    --boxShadow: #F4A261; 
+    --lightColor: #8a8888;
+}
+
+@keyframes upDownAnimation{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.moving-img{
+    animation-name: upDownAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* Fixed Width Layout */
+.main{
+    max-width: 1800px;
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+
+/* ============== Header Start ============== */
+header{
+    width: 100vw;
+    min-height: 80px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .main{
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    
+}
+
+header .main .logo{
+    font-size: 35px;
+    color: white;
+}
+
+header .main span{
+    color: var(--textColor);
+}
+
+header .main nav{
+    display: flex;
+    gap: 13em;
+    /* padding-right: 100px; */
+}
+
+header .main nav a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+header .main nav a:hover{
+    color: var(--textColor);
+}
+
+
+.dropdown {
+    display: none; 
+}
+
+/* ============== Header End ============== */
+
+
+/* ============== Home Section Start ============== */
+
+/* ////////////// Home Sec 1 */
+section{
+    width: 100vw;
+    height: inherit;
+}
+
+.home {
+    margin-top: 80px;
+}
+
+.home .hero-sec{
+    position: relative;
+    height: 900px;
+}
+
+.home .hero-sec {
+    position: relative;
+}
+
+.home .hero-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/hero-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    z-index: 0;
+}
+
+.home .hero-sec .main{
+    display: flex;
+    padding-top: 10em;
+    gap: 8em;
+    position: relative;
+    z-index: 1;
+}
+
+.home .hero-sec .hero-text{
+    width: 60%;   
+}
+
+.home .main .hero-text h1{
+    color: white;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.home .main .hero-text p{
+    color: white;
+    margin-bottom: 5em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.home .hero-text .hero-btns button{
+    padding: 10px 20px;
+    border-radius: 5px;   
+    font-size: 17px;
+}
+
+.home .hero-text .hero-btns .transparent-btn{
+    border: 1px solid var(--borderColor);
+    background: transparent;
+    color: var(--textColor);
+}
+
+.home .hero-text .hero-btns .transparent-btn:hover{
+    background-color: var(--bgColor);
+    color: white;
+    transition: background-color 1s ease-in;
+}
+
+.home .hero-text .hero-btns .colored-btn{
+    background-color: var(--bgColor);
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.home .hero-text .hero-btns .colored-btn:hover{
+    box-shadow: 3px 3px 5px var(--boxShadow);
+    transition: background-color 3s ease-in;
+}
+
+/* ////////////// All Headings */
+.headings{
+    text-align: center;
+}
+
+.headings h2{
+    color: black;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.headings h2 span{
+    color: var(--textColor);
+}
+
+/* ////////////// Home Sec 2 */
+.home .hero-sec-2 .main{
+    padding: 5em 0;
+    border-bottom: 1px solid var(--lightColor);
+}
+
+.home .hero-sec-2 .headings p{
+    color: var(--lightColor);
+    font-size: 1em;
+}
+
+.home .hero-sec-2 .data{
+    display: flex;
+    padding: 5em 0;
+}
+
+.home .hero-sec-2 .data-img{
+    width: 50%;
+}
+
+.home .hero-sec-2 .data-img img{
+    width: 500px;
+    height: 550px;
+}
+
+.home .hero-sec-2 .data .data-text{
+    width: 50%;
+    padding-top: 70px;
+}
+
+.home .hero-sec-2 .data-text h3{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.home .hero-sec-2 .data-text p{
+    color: var(--lightColor);
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+/* ============== Home Section End ============== */
+
+
+/* ============== About Section Start ==============  */
+.about{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== About Section End ============== */
