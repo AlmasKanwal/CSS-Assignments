@@ -28,10 +28,10 @@
 
                 <div class="dropdown-menu">
                     <label for="dropdown-toggle" class="close-a"><i class="fa-solid fa-xmark"></i></label>
-                    <a href="#" class="nav-a">Platform <i class="fa-solid fa-angle-down"></i></a>
-                    <a href="#" class="nav-a">Widgets</a>
-                    <a href="#" class="nav-a">Template</a>
-                    <a href="#" class="nav-a">Pricing</a>
+                    <a href="#plateform" class="nav-a">Platform <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#widget" class="nav-a">Widgets</a>
+                    <a href="#template" class="nav-a">Template</a>
+                    <a href="#pricing" class="nav-a">Pricing</a>
                     <a href="#" class="nav-a">Login</a>
                     <button class="btn-a">Start Free Trial</button>
                 </div>
@@ -39,10 +39,10 @@
             </div>
 
             <nav>
-                <a href="#" class="nav-a">Platform <i class="fa-solid fa-angle-down"></i></a>
-                <a href="#" class="nav-a">Widgets</a>
-                <a href="#" class="nav-a">Template</a>
-                <a href="#" class="nav-a">Pricing</a>
+                <a href="#plateform" class="nav-a">Platform <i class="fa-solid fa-angle-down"></i></a>
+                <a href="#widget" class="nav-a">Widgets</a>
+                <a href="#template" class="nav-a">Template</a>
+                <a href="#pricing" class="nav-a">Pricing</a>
             </nav>
 
             <div class="btn">
@@ -130,7 +130,7 @@
 
     
     <!-- ================ About Section Start ================ -->
-    <section class="about-sec">
+    <section class="about-sec" id="widget">
 
         <div class="main">
 
@@ -284,7 +284,7 @@
 
 
     <!-- ================ Templates Section Start ================ -->
-    <section class="templates-sec">
+    <section class="templates-sec" id="template">
 
         <div class="main">
 
@@ -297,7 +297,7 @@
 
             <div class="templates-box">
 
-                <div class="choose-templates">
+                <div class="choose-templates card-hover">
                     <img src="./assets/temp-1.jpg" alt="Ecommerce">
 
                     <div class="temp-text">
@@ -306,7 +306,7 @@
                     </div>
                 </div>
 
-                 <div class="choose-templates">
+                 <div class="choose-templates card-hover">
                     <div class="temp-text">
                         <h3>Highlights</h3>
                         <p>Mimics the same functionality of the Instagram Highlights on your website.</p>
@@ -315,7 +315,7 @@
                     <img src="./assets/temp-2.png" alt="Preview">
                 </div>
 
-                 <div class="choose-templates">
+                 <div class="choose-templates card-hover">
                     <img src="./assets/temp-3.png" alt="Ecommerce">
 
                     <div class="temp-text">
@@ -324,7 +324,7 @@
                     </div>
                 </div>
 
-                 <div class="choose-templates">
+                 <div class="choose-templates card-hover">
                         <img src="./assets/temp-4.png" alt="Ecommerce">
 
                     <div class="temp-text">
@@ -344,11 +344,19 @@
 
 
     <!-- ================ Integrations Section Start ================ -->
-    <section class="integrations-sec">
+    <section class="integrations-sec" id="plateform">
 
         <div class="main">
 
-            <img src="./assets/integration-text.png" alt="Integrations" class="int-text">
+            <div class="integration-text">
+                <img src="./assets/int-sec.png" alt="Integration">
+                <h2>Works with 99.9% of web platforms</h2>
+                <p>We integrate with tons of other apps, ecoomerce platforms or web builders. Native apps are avaialble, too. </p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Works with any website</li>
+                    <li><i class="fa-solid fa-check"></i> No coding required to embed</li>
+                </ul>
+            </div>
 
             <img src="./assets/integration-picture.png" alt="Integrations" class="int-pic">
 
@@ -370,15 +378,15 @@
             </div>
 
             <div class="features-components">
-                <span><i class="fa-solid fa-building"></i> Stories from specific date</span>
-                <span><i class="fa-solid fa-fill-drip"></i> Customize color</span>
-                <span><i class="fa-brands fa-instagram"></i> Follow button</span>
-                <span><i class="fa-brands fa-windows"></i> Multiple layouts</span>
-                <span><i class="fa-solid fa-gear"></i> Advance moderation</span>
-                <span><i class="fa-solid fa-code"></i> Custom CSS</span>
+                <span class="card-hover"><i class="fa-solid fa-building"></i> Stories from specific date</span>
+                <span class="card-hover"><i class="fa-solid fa-fill-drip"></i> Customize color</span>
+                <span class="card-hover"><i class="fa-brands fa-instagram"></i> Follow button</span>
+                <span class="card-hover"><i class="fa-brands fa-windows"></i> Multiple layouts</span>
+                <span class="card-hover"><i class="fa-solid fa-gear"></i> Advance moderation</span>
+                <span class="card-hover"><i class="fa-solid fa-code"></i> Custom CSS</span>
             </div>
 
-            <img src="./assets/preview-story-widget.png" alt="Story Widget">
+            <img src="./assets/preview-story-widget.png" alt="Story Widget" class="card-hover">
 
         </div>
 
@@ -406,14 +414,13 @@
                 <img src="./assets/preview-story-widget.png" alt="Site">
             </div>
 
-            <div class="features-iframe">
+            <div class="features-iframe card-hover">
                 <h4>Implementation instructions</h4>
 
                 <iframe width="252" height="150" src="https://www.youtube.com/embed/nGhKIC_7Mkk?si=bhsks0XpMR0nwiPJ&amp;start=5936" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <div class="iframe-share">
                     <div class="iframe-icons">
-                        <!-- <i class="fa-solid fa-code"></i> -->
                         <img src="./assets/code.png" alt="Code">
                         <p class="colored">HTML</p>
                     </div>
@@ -472,9 +479,9 @@
             </div>
 
             <div class="hero-pic-component">
-                <img src="./assets/cta.png" alt="Cta">
-                <img src="./assets/cta-1.png" alt="Pumpkin Spice">
-                <img src="./assets/cta-2.png" alt="Avocado Time">
+                <img src="./assets/cta.png" alt="Cta" class="card-hover">
+                <img src="./assets/cta-1.png" alt="Pumpkin Spice" class="card-hover">
+                <img src="./assets/cta-2.png" alt="Avocado Time" class="card-hover">
             </div>
 
         </div>
@@ -492,52 +499,52 @@
 
             <div class="features-cont-3">
 
-                <div class="features-service">
-                    <img src="./assets/service-1.png" alt="Auto sync">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-1.png" alt="Auto sync" class="card-hover">
                     <h3>Auto sync</h3>
                     <p>Sync all Instagram stories in a single click and create an widget that you can embed on any website.</p>
                 </div>
 
-                <div class="features-service">
-                    <img src="./assets/service-2.png" alt="Responsive">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-2.png" alt="Responsive" class="card-hover">
                     <h3>Responsive</h3>
                     <p>Mobile-friendly, fully responsive, fits on every display: tablet, mobile, or desktop.</p>
                 </div>
 
-                <div class="features-service">
-                    <img src="./assets/service-3.png" alt="Follow button">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-3.png" alt="Follow button" class="card-hover">
                     <h3>Follow button</h3>
                     <p>Show a Follow button with a link to your Instagram account to help you drive traffic and increase followers.</p>
                 </div>
 
-                <div class="features-service">
-                    <img src="./assets/service-4.png" alt="Unlimited widgets">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-4.png" alt="Unlimited widgets" class="card-hover">
                     <h3>Unlimited widgets</h3>
                     <p>Create multiple widgets and embed feeds on various websites from multiple social media platforms.</p>
                 </div>
 
-                <div class="features-service">
-                    <img src="./assets/service-5.png" alt="Localization">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-5.png" alt="Localization" class="card-hover">
                     <h3>Localization</h3>
                     <p>Use the 10+ languages available in the platform to localize the widget for your web visitors. </p>
                 </div>
 
-                <div class="features-service">
-                    <img src="./assets/service-6.png" alt="Filters">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-6.png" alt="Filters" class="card-hover">
                     <h3>Filters (PRO)</h3>
                     <p>Use filters by date or keywords. Change the number of pages and post per page in your feed...</p>
                 </div>
 
-                <div class="features-service">
-                    <img src="./assets/service-7.png" alt="Auto sync">
+                <div class="features-service card-hover">
+                    <img src="./assets/service-7.png" alt="Auto sync" class="card-hover">
                     <h3>Analytics</h3>
                     <p>Know which Instagram story performs best and the total clicks of the entire widget on your website.</p>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <h3>Custom CSS</h3>
                     <p>Variety of settings, filters, and a Custom CSS editor to style your social media widget entirely. </p>
-                    <img src="./assets/service-8.png" alt="Auto sync">
+                    <img src="./assets/service-8.png" alt="Auto sync" class="card-hover">
                 </div>
 
             </div>
@@ -565,7 +572,7 @@
 
                 </div>
 
-                <img src="./assets/social-proof.png" alt="">
+                <img src="./assets/social-proof.png" alt="Picture" class="card-hover">
 
             </div>
 
@@ -585,7 +592,7 @@
 
             <div class="features-cont-3">
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-1.png" alt="Terry Dias">
                     <h3>Terry Dias</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -596,7 +603,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-2.png" alt="James Workman">
                     <h3>James Workman</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -607,7 +614,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-3.png" alt="Ahmad Vaccaro">
                     <h3>Ahmad Vaccaro</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -618,7 +625,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-4.png" alt="Allison Culhane">
                     <h3>Allison Culhane</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -629,7 +636,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-5.png" alt="Davis Herwitz">
                     <h3>Davis Herwitz</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -640,7 +647,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-6.png" alt="Jessie Grant ">
                     <h3>Jessie Grant</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -651,7 +658,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-7.png" alt="John Smith">
                     <h3>John Smith</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -662,7 +669,7 @@
                     </div>
                 </div>
 
-                <div class="features-service">
+                <div class="features-service card-hover">
                     <img src="./assets/custom-8.jpg" alt="Ben Calahen">
                     <h3>Ben Calahen, COO at Clovin</h3>
                     <img src="./assets/starts.png" alt="Stars" class="stars">
@@ -684,11 +691,11 @@
 
 
     <!-- ================ Pricing Section Start ================ -->
-    <section class="pricing-sec">
+    <section class="pricing-sec" id="pricing">
 
         <div class="main">
 
-            <h2> Try all EmbedStories features 7 days free.</h2>
+            <h2>Try all EmbedStories features 7 days free.</h2>
             <p>Reach more with your Instagram stories.</p>
 
             <div class="btn"><button>Annualy, save 20%</button>Monthly</div>
