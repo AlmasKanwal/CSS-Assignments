@@ -1,0 +1,43 @@
+/* ================ Header Start ================ */
+@media only screen and (max-width: 850px){
+    .dropdown{
+        display: block;
+    }
+
+    header .main nav{
+        display: none;
+    }
+
+    header .main .btn{
+        display: none;
+    }
+}
+/* ================ Header End ================ */
+
+
+/* ================ Hero Section Start ================ */
+@media only screen and (max-width: 1070px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================ Hero Section End ================ */
