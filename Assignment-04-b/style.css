@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+}
+
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+
+:root{
+    --themeColor: #f8b864;
+    --themeHoverColor: #f5a844;
+    --whiteColor: #ffffff;
+    --grayColor: #555555;
+}
+
+/* ============= Navbar Start ============= */
+header{
+    background-color: var(--whiteColor);
+    font-size: 16px;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav img{
+    width: 204px;
+    height: 50px;
+}
+
+nav .btn, 
+.hero-slider-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+nav .btn:hover, .hero-slider-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+nav ul li, button{
+    margin-right: 10px;
+    font-weight: 800;
+}
+
+nav .nav-link:hover{
+    color: var(--themeColor);
+    transition: all 0.5s ease;
+}
+
+.top-nav{
+    color: var(--whiteColor);
+    font-size: 14px;
+    padding: 10px;
+    align-items: center;
+}
+
+.top-nav-bg{
+    background-color: var(--themeColor);
+}
+/* ============= Navbar End ============= */
+
+/* section{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+} */
+
+/* ============= Hero Section / Carousal Start ============= */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.carousel-caption h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+/* ============= Hero Section / Carousal End ============= */
+
+
+/* ============= Get Envolved Section Start ============= */
+/* .get-involved {
+  background-color: blueviolet;
+} */
+
+.card-group{
+    position: relative;
+    bottom: 80px;
+    z-index: 1000;
+}
+
+.card-group .card{
+    border-radius: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.card-group .card img{
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+}
+
+.card-group .card h4{
+    font-weight: bold;
+}
+
+.card-group .card p{
+    color: var(--grayColor);
+    font-size: 17px;
+}
+
+.card-group .card-text{
+    text-decoration: none;
+}
+
+.card-group .card-text .a-col{
+    color: var(--grayColor);
+    font-size: 14px;
+}
+
+.card-group .card .a-col:hover{
+    color: var(--themeColor);
+    text-decoration: underline;
+}
+/* ============= Get Envolved Section End ============= */
+
+
+/* ============= Causes Section Start =============  */
+.causes-sec{
+    background-color: #f2f2f2;
+    font-size: 17px;
+}
+
+.causes-sec .card-group{
+    position: relative;
+    bottom: 0;
+    z-index: 0;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.causes-sec .card{
+    border-radius: none;
+    box-shadow: none;
+}
+
+.causes-sec .head h2{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.causes-sec .head p{
+    color: var(--grayColor);
+    font-size: 16px;
+}
+
+.causes-sec .head span {
+    display: inline-block;  
+    width: 50px;
+    height: 5px;             
+    background-color: var(--themeColor);
+    margin: 10px auto;         
+}
+
+.causes-sec .card img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    position: relative;
+    border-radius: 0;
+}
+
+.percent{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    height: 10px; 
+    background-color: var(--themeColor);
+    position: relative;
+    left: 0;
+    bottom: 30px;
+}
+
+.line-1{
+    width: 25%;
+}
+
+.line-2{
+    width: 45%;
+}
+
+.line-3{
+    width: 75%;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--themeColor);
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+    animation: slideIn 1s ease-out forwards; 
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.p-text{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fda839;
+    font-size: 13px;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    top: 10px;
+}
+
+.goal .fa{
+    color: var(--themeColor);
+}
+
+.goal span{
+    color: var(--grayColor);
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.causes-sec .card-group .card-text .a-col{
+    font-size: 17px;
+}
+/* ============= Causes Section End ============= */
+
+
+/* ============= About Section Start =============  */
+.about-sec{
+    font-size: 17px;
+    position: relative;
+    overflow: hidden; 
+    padding: 20px 0;
+}
+
+.about-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(253, 168, 57, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.about-sec::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(253, 168, 57, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.about-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.about-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.about-sec .card-group{
+    position: relative;
+    bottom: 0;
+    z-index: 0;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.about-sec .card{
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+.about-sec .card-1 img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.about-sec .card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed #bbbaba;
+}
+
+.about-sec .card-2 .profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+/* ============= About Section End =============  */
+
+
+/* ============= Featured Section Start ============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============= Featured Section End ============= */
