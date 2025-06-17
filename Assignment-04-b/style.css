@@ -36,9 +36,14 @@ header{
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar{
+  background-color: var(--whiteColor);
+}
+
 .dropdown-menu {
   border: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 0;
+  background-color: var(--whiteColor);
 }
 
 nav img{
@@ -120,10 +125,6 @@ nav .nav-link:hover{
 
 
 /* ============= Get Envolved Section Start ============= */
-/* .get-involved {
-  background-color: blueviolet;
-} */
-
 .card-group{
     position: relative;
     bottom: 80px;
@@ -289,6 +290,23 @@ nav .nav-link:hover{
 .causes-sec .card-group .card-text .a-col{
     font-size: 17px;
 }
+
+.causes-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.causes-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.causes-sec button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 /* ============= Causes Section End ============= */
 
 
@@ -311,7 +329,7 @@ nav .nav-link:hover{
     border-radius: 50%;
     z-index: 0;
 }
-
+ 
 .about-sec::after {
     content: '';
     position: absolute;
@@ -375,33 +393,419 @@ nav .nav-link:hover{
 
 
 /* ============= Featured Section Start ============= */
+.featured-sec {
+  background-image: url(assets/feature-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 17px;
+  color: var(--whiteColor);
+  position: relative;
+  padding: 90px 0;
+}
 
+.featured-sec:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
 
+.featured-sec .feature-center{
+  gap: 100px;
+}
 
+.featured-sec .text-feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
 
+.featured-sec > * {
+  position: relative;
+  z-index: 2; 
+}
 
+.featured-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    width: 180px;
+    height: 46px;
+}
 
+.featured-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
 
+.featured-sec .goal span{
+    color: var(--whiteColor);
+}
 
+.featured-sec .progress-bar{
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff33;
+  border-radius: 30px;
+}
 
+.featured-sec .line{
+    width: 35%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    left: 0;
+    bottom: 60px;
+}
 
+.featured-sec .circle{
+    bottom: 60px;
+    animation: slideIn 1s ease-out forwards; 
+}
 
+.featured-sec .video-wrap {
+  position: relative;
+}
 
+.featured-sec .video-wrap img {
+  width: 540px;
+  height: auto;
+  border-radius: 5px;
+  filter: brightness(70%);
+}
 
+.featured-sec .video-wrap img:hover {
+  filter: brightness(100%);
+  transition: filter 3s ease;
+}
 
+.featured-sec .play {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--whiteColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.featured-sec .play a {
+  color: var(--whiteColor);
+  font-size: 30px;
+  text-decoration: none;
+}
 /* ============= Featured Section End ============= */
+
+
+
+/* ============= Volunteers Section Start =============  */
+.volunteers-sec{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+
+.volunteers-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(253, 168, 57, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+}
+ 
+.volunteers-sec::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(253, 168, 57, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.volunteers-sec .head h2{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.volunteers-sec .head p{
+    color: var(--grayColor);
+    font-size: 16px;
+}
+
+.volunteers-sec .head span {
+    display: inline-block;  
+    width: 50px;
+    height: 5px;             
+    background-color: var(--themeColor);
+    margin: 10px auto;         
+}
+
+.volunteers-sec .fa{
+    color: var(--themeColor);
+}
+
+
+.volunteers-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.volunteers-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.volunteers-sec .image-wrap {
+  position: relative;
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+.volunteers-sec .image-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.volunteers-sec .image-wrap .hover {
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: bottom 0.3s ease;
+  text-align: center;
+}
+
+.volunteers-sec .image-wrap:hover .hover {
+  bottom: 0; 
+}
+
+.volunteers-sec .hover h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--themeColor);
+}
+
+.volunteers-sec .hover p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.volunteers-sec .team-content{
+  width: 100%;
+}
+
+.volunteers-sec .team-content h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.volunteers-sec .team-content h3 {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.volunteers-sec .team-content p {
+  color: var(--grayColor);
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.volunteers-sec .check-list {
+  list-style: none;
+  padding: 0;
+  color: var(--grayColor);
+}
+
+.volunteers-sec .check-list li {
+  margin-bottom: 10px;
+}
+
+.volunteers-sec .check-list i {
+  margin-right: 10px;
+}
+/* ============= Volunteers Section End =============  */
+
+
+/* ============= Impact Section Start ============= */
+.impact-sec {
+  background-image: url(assets/mission.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 17px;
+  color: var(--whiteColor);
+  position: relative;
+  padding: 150px 0;
+}
+
+.impact-sec:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.impact-sec > * {
+  position: relative;
+  z-index: 2; 
+}
+
+.impact-sec .impact-statistics{
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.impact-statistics .statistic i{
+  font-size: 35px;
+}
+
+.impact-statistics .statistic h2{
+  font-size: 48px;
+  color: var(--themeColor);
+  font-weight: bold;
+}
+
+.impact-statistics .statistic p{
+  font-size: 18px;
+  font-weight: bold;
+}
+/* ============= Impact Section End ============= */
+
+
+/* ============= Event Section Start ============= */
+.event-sec{
+  background-color: #f2f2f2;
+}
+
+.event-sec .head h2{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.event-sec .head p{
+    color: var(--grayColor);
+    font-size: 16px;
+}
+
+.event-sec .head span {
+    display: inline-block;  
+    width: 50px;
+    height: 5px;             
+    background-color: var(--themeColor);
+    margin: 10px auto;         
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.carousel-caption h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+
+
+
+/* ============= Event Section End ============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

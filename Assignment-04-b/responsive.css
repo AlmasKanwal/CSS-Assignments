@@ -156,6 +156,82 @@
 /* ============= Get Envolved Section End ============= */
 
 
+/* ============= Featured Section Start ============= */
+@media only screen and (max-width: 1000px){
+  .featured-sec .video-wrap img {
+    width: 340px;
+  }
+
+  .featured-sec .play {
+    top: 22%;
+}
+}
+
+@media only screen and (max-width: 750px){
+  .featured-sec .feature-center{
+    flex-direction: column;
+
+  }
+
+  .featured-sec .video-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featured-sec .video-wrap img {
+  width: 540px;
+  }
+
+  .featured-sec .play {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  .featured-sec .video-wrap img {
+  width: 480px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .featured-sec .video-wrap img {
+  width: 400px;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .featured-sec .video-wrap img {
+  width: 330px;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .featured-sec .video-wrap img {
+  width: 250px;
+  }
+}
+/* ============= Featured Section End ============= */
+
+
+/* ============= Volunteers Section Start =============  */
+@media (max-width: 768px) {
+  .volunteers-sec .team-img {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .volunteers-sec .image-wrap {
+    width: 200px; 
+    height: 200px; 
+  }
+}
+/* ============= Volunteers Section End =============  */
+
+
+/* ============= Impact Section Start ============= */
 
 
 
@@ -182,12 +258,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
+/* ============= Impact Section End ============= */
