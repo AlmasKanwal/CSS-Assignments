@@ -710,21 +710,114 @@ nav .nav-link:hover{
 
 
 /* ============= Event Section Start ============= */
-.event-sec{
+.event-sec {
+  padding: 50px 0;
   background-color: #f2f2f2;
 }
 
-.event-sec .head h2{
+.event-sec .head h2 {
+  font-size: 38px;
+  font-weight: bold;     
+}
+
+.event-sec .head span {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: var(--themeColor);
+  margin: 10px auto;    
+}
+
+.event-sec .head p{
+  font-size: 16px;
+  color: var(--grayColor);
+}
+
+.event-sec .slider-container {
+  overflow: hidden;
+  width: 100%;
+  /* max-width: 1140px; */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.event-sec .slider-card img {
+    height: 282px !important;
+    width: auto;
+    object-fit: cover;
+  }
+
+.event-sec .slider-wrapper{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.event-sec .slider-card {
+  min-width: 540px;
+  max-width: 540px;
+  flex-shrink: 0;
+}
+
+.event-sec .card-body h5{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.event-sec .card-body .card-text small{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.event-sec .card-body .p{
+  font-size: 17px;
+}
+
+.event-sec .fa{
+    color: var(--themeColor); 
+    margin-right: 5px;
+}
+
+.event-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.event-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.event-sec .nav-btn {
+  background-color: var(--themeColor);
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.event-sec .slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+/* ============= Event Section End ============= */
+
+
+/* ============= Review Section Start ============= */
+.reviews-sec .head h2{
     font-weight: bold;
     font-size: 38px;
 }
 
-.event-sec .head p{
+.reviews-sec .head p{
     color: var(--grayColor);
     font-size: 16px;
 }
 
-.event-sec .head span {
+.reviews-sec .head span{
     display: inline-block;  
     width: 50px;
     height: 5px;             
@@ -732,56 +825,136 @@ nav .nav-link:hover{
     margin: 10px auto;         
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  z-index: 10;
-  text-align: center;
-  color: white;
-  padding: 0 15px;
-  width: 100%;
-  max-width: 650px;
+.reviews-sec .carousel-indicators{
+  margin-top: 20px;
+  gap: 10px;
 }
 
-.carousel-caption h2 {
-  font-size: 3rem;
+.reviews-sec .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbbaba;
+  border: none;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.reviews-sec .carousel-indicators .active{
+  background-color: var(--themeColor); 
+}
+
+.reviews-sec .card p{
+  font-size: 17px;
+  color: var(--grayColor);
+}
+
+.reviews-sec .card .text-start h6{
+  font-size: 18px;
+}
+
+.reviews-sec .card .text-start small{
+  font-size: 14px;
+  color: var(--grayColor);
   font-weight: bold;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+/* ============= Review Section End ============= */
+
+
+/* ============= Stories Section Start ============= */
+.stories-sec{
+  background-color: #f2f2f2;
 }
 
-.carousel-caption p {
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+.stories-sec .card img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    position: relative;
+    border-radius: 0;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
+.stories-sec .head h2{
+    font-weight: bold;
+    font-size: 38px;
 }
 
+.stories-sec .head p{
+    color: var(--grayColor);
+    font-size: 16px;
+}
+
+.stories-sec .head span {
+    display: inline-block;  
+    width: 50px;
+    height: 5px;             
+    background-color: var(--themeColor);
+    margin: 10px auto;         
+}
+
+.stories-sec .card-group{
+    position: relative;
+    bottom: 0;
+    z-index: 0;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.stories-sec .card{
+    border-radius: none;
+    box-shadow: none;
+}
+
+.stories-sec .card small{
+  color: var(--grayColor);
+  font-weight: bold;
+}
+
+.stories-sec .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.stories-sec .card .img{
+  height: 228px;
+}
+/* ============= Stories Section End ============= */
+
+
+/* ============= Sponsor Section Start ============= */
+.sponsor-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+/* .sponsor-section .sponsor-carousel .item img {
+  max-height: 80px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.sponsor-section .sponsor-carousel .item img:hover {
+  filter: none;
+}
+
+ .owl-carousel .owl-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+/* ============= Sponsor Section End ============= */
+
+
+/* ============= Fooetr Start ============= */
 
 
 
 
 
-/* ============= Event Section End ============= */
 
 
 
@@ -790,22 +963,4 @@ nav .nav-link:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ============= Fooetr End ============= */

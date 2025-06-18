@@ -215,14 +215,14 @@
 
 
 /* ============= Volunteers Section Start =============  */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .volunteers-sec .team-img {
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .volunteers-sec .image-wrap {
     width: 200px; 
     height: 200px; 
@@ -231,7 +231,23 @@
 /* ============= Volunteers Section End =============  */
 
 
-/* ============= Impact Section Start ============= */
+/* ============= Event Section Start ============= */
+@media only screen and (max-width: 768px) {
+  .event-sec .slider-wrapper {
+    flex-direction: column;
+    transform: translateY(0px);
+  }
+
+  .event-sec .slider-card {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .event-sec .slider-controls {
+    visibility: hidden;
+  }
+}
+/* ============= Event Section End ============= */
 
 
 
@@ -248,14 +264,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* ============= Impact Section End ============= */
