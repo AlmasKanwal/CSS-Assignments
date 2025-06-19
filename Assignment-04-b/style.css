@@ -26,6 +26,7 @@ body{
 header{
     background-color: var(--whiteColor);
     font-size: 16px;
+    z-index: 1001;
 }
 
 .fixed-nav {
@@ -34,7 +35,7 @@ header{
   left: 0;
   right: 0;
   width: 100vw;
-  z-index: 999;
+  z-index: 1001;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,6 +47,7 @@ header{
   border: none;
   border-radius: 0;
   background-color: var(--whiteColor);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 nav img{
@@ -87,11 +89,6 @@ nav .nav-link:hover{
 }
 /* ============= Navbar End ============= */
 
-/* section{
-    width: 100vw;
-    height: 100vh;
-    background-color: aqua;
-} */
 
 /* ============= Hero Section / Carousal Start ============= */
 .carousel-caption {
@@ -130,7 +127,7 @@ nav .nav-link:hover{
 .card-group{
     position: relative;
     bottom: 80px;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .card-group .card{
@@ -509,7 +506,6 @@ nav .nav-link:hover{
 /* ============= Featured Section End ============= */
 
 
-
 /* ============= Volunteers Section Start =============  */
 .volunteers-sec{
     position: relative;
@@ -738,7 +734,6 @@ nav .nav-link:hover{
 .event-sec .slider-container {
   overflow: hidden;
   width: 100%;
-  /* max-width: 1140px; */
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -1000,7 +995,8 @@ nav .nav-link:hover{
 }
 
 .widget-sec .widget-content{
-  gap: 30px;
+  gap: 50px;
+  justify-content: space-between;
 }
 
 .widget-sec .widget-items{
@@ -1047,3 +1043,27 @@ nav .nav-link:hover{
   margin-right: 5px;
 }
 /* ============= Widget Section Start ============= */
+
+
+/* ============= Footer Start ============= */
+.footer-sec{
+  background-color: #222222;
+  border-top: 1px solid var(--whiteColor);
+  padding: 30px 0;
+  color: var(--whiteColor);
+  font-size: 15px;
+}
+
+.footer-sec .footer-links a{
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.footer-sec .footer-links a:hover{
+  color: var(--themeColor);
+}
+
+.footer-sec .footer-items i{
+  margin-right: 5px;
+}
+/* ============= Footer End ============= */

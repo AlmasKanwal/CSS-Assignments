@@ -299,10 +299,20 @@
     width: 100%;
   }
 }
-
-
-
-
-
-
 /* ============= Widget Section End ============= */
+
+
+/* ============= Footer Start ============= */
+@media only screen and (max-width: 800px){
+  .footer-sec .footer-items{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 318px){
+  .footer-sec .footer-links{
+    flex-direction: column;
+    gap: 3px !important;
+  }
+}
+/* ============= Footer End ============= */
