@@ -231,6 +231,15 @@
 /* ============= Volunteers Section End =============  */
 
 
+/* ============= Impact Section Start ============= */
+@media only screen and (max-width: 460px) {
+  .impact-sec .impact-statistics{
+    flex-direction: column;
+  }
+}
+/* ============= Impact Section End ============= */
+
+
 /* ============= Event Section Start ============= */
 @media only screen and (max-width: 768px) {
   .event-sec .slider-wrapper {
@@ -250,17 +259,50 @@
 /* ============= Event Section End ============= */
 
 
+/* ============= Sponsor Section Start ============= */
+@media only screen and (max-width: 768px) {
+  .sponsor-section .sponsor-carousel {
+    gap: 20px;
+  }
+  .sponsor-section .sponsor-item img {
+    max-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .sponsor-section .sponsor-carousel {
+    flex-direction: column;
+  }
+}
+/* ============= Sponsor Section End ============= */
+
+
+/* ============= Widget Section Start ============= */
+@media only screen and (max-width: 1000px){
+  .widget-sec .widget-items p{
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .widget-sec .widget-items p{
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .widget-sec .widget-content{
+    flex-wrap: wrap;
+  }
+
+  .widget-sec .widget-items p{
+    width: 100%;
+  }
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+/* ============= Widget Section End ============= */

@@ -9,9 +9,11 @@
 
 html{
     font-size: 16px;
-    overflow-x: hidden;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 :root{
     --themeColor: #f8b864;
@@ -928,7 +930,11 @@ nav .nav-link:hover{
   padding: 50px 0;
 }
 
-/* .sponsor-section .sponsor-carousel .item img {
+.sponsor-section .sponsor-carousel{
+  flex-wrap: wrap;
+}
+
+.sponsor-section .sponsor-carousel .sponsor-item img {
   max-height: 80px;
   width: auto;
   margin: 0 auto;
@@ -937,30 +943,107 @@ nav .nav-link:hover{
   transition: 0.3s;
 }
 
-.sponsor-section .sponsor-carousel .item img:hover {
+.sponsor-section .sponsor-carousel .sponsor-item img:hover {
   filter: none;
 }
 
- .owl-carousel .owl-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
+.sponsor-section .sponsor-carousel .sponsor-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 0.6s ease forwards;
+  opacity: 0; 
+}
+
+/* Animation Keyframes */
+@keyframes slideInRight{
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sponsor-carousel .sponsor-item:nth-child(1){
+  animation-delay: 0.1s;
+}
+.sponsor-carousel .sponsor-item:nth-child(2){
+  animation-delay: 0.3s;
+}
+.sponsor-carousel .sponsor-item:nth-child(3){
+  animation-delay: 0.5s;
+}
+.sponsor-carousel .sponsor-item:nth-child(4){
+  animation-delay: 0.7s;
+}
+.sponsor-carousel .sponsor-item:nth-child(5){
+  animation-delay: 0.9s;
+}
+.sponsor-carousel .sponsor-item:nth-child(6){
+  animation-delay: 1.1s;
+}
+.sponsor-carousel .sponsor-item:nth-child(7){
+  animation-delay: 1.3s;
+}
 /* ============= Sponsor Section End ============= */
 
 
-/* ============= Fooetr Start ============= */
+/* ============= Widget Section Start ============= */
+.widget-sec{
+  background-color: #222222;
+  padding: 90px 0;
+  font-size: 17px;
+  color: #999999;
+}
 
+.widget-sec .widget-content{
+  gap: 30px;
+}
 
+.widget-sec .widget-items{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+.widget-sec .widget-items h3{
+  color: var(--whiteColor);
+}
 
+.widget-sec .widget-items p{
+  width: 350px;
+}
 
+.widget-sec .widget-items img{
+  width: 204px;
+  height: 50px;
+}
 
+.widget-sec .widget-items .icons a{
+  color: var(--themeColor);
+  text-decoration: none;
+  cursor: pointer;
+}
 
+.widget-sec .widget-items .icons a:hover{
+  color: var(--whiteColor);
+}
 
+.widget-sec .camp a{
+  color: #999999;
+  text-decoration: none;
+}
 
+.widget-sec .camp a:hover{
+  color: var(--themeColor);
+  text-decoration: underline;
+}
 
-
-
-
-/* ============= Fooetr End ============= */
+.widget-sec .widget-items i{
+  color: var(--themeColor);
+  margin-right: 5px;
+}
+/* ============= Widget Section Start ============= */
