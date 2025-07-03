@@ -1067,3 +1067,140 @@ nav .nav-link:hover{
   margin-right: 5px;
 }
 /* ============= Footer End ============= */
+
+
+
+/* #################################################################### ALL PAGES OF WEBSITE #################################################################### */
+/* ============= About Us Page Start ============= */
+
+/* Hero Section Start */
+.hero-sections{
+  background-image: url(assets/about-hero.png);
+  height: 260px; 
+  background-repeat: no-repeat;
+  background-size:cover; 
+  background-position: center;
+  margin-bottom: 80px;
+}
+
+.hero-sections .container-xxl{
+  padding: 60px 10px; 
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero-sections .links-sec .a-1{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero-sections .links-sec span{
+  color: var(--grayColor);
+  font-weight: bold;
+}
+
+.hero-sections .links-sec .a-1:hover{
+  text-decoration: underline;
+}
+
+.hero-sections .links-sec .a-2{
+  text-decoration: none;
+  color: var(--themeColor);
+}
+
+.hero-sections h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-sections p {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+/* Hero Section End */
+
+
+/* About Section Start */
+.about-sec{
+    font-size: 17px;
+    position: relative;
+    overflow: hidden; 
+    padding: 20px 0;
+}
+
+.about-sec::before {
+    background: none;
+}
+ 
+.about-sec::after {
+    background: none;
+}
+
+.about-sec .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.about-sec .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.about-sec .card{
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    display: flex;
+}
+
+.about-sec .card img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* About Section End  */
+
+
+/* ============= About Us Page End ============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
