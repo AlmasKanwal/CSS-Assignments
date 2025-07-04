@@ -87,6 +87,10 @@ nav .nav-link:hover{
 .top-nav-bg{
     background-color: var(--themeColor);
 }
+
+#mainNavbar{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 /* ============= Navbar End ============= */
 
 
@@ -1124,40 +1128,44 @@ nav .nav-link:hover{
 
 
 /* About Section Start */
-.about-sec{
+.about-sec-p{
     font-size: 17px;
     position: relative;
     overflow: hidden; 
     padding: 20px 0;
+    margin-bottom: 80px;
 }
 
-.about-sec::before {
+.about-sec-p::before {
     background: none;
 }
  
-.about-sec::after {
+.about-sec-p::after {
     background: none;
 }
 
-.about-sec .btn{
+.about-sec-p .btn{
     background-color: var(--themeColor) !important;
     color: var(--whiteColor) !important;
     padding: 10px 20px;
 }
 
-.about-sec .btn:hover{
+.about-sec-p .btn:hover{
     background-color: var(--themeHoverColor) !important;
     color: var(--whiteColor) !important;
 }
 
-.about-sec .card{
+.about-sec-p .card{
     border: none;
     border-radius: none;
     box-shadow: none;
     display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
 }
 
-.about-sec .card img{
+.about-sec-p .card img{
     max-width: 500px;
     width: 100%;
     height: auto;
@@ -1165,42 +1173,166 @@ nav .nav-link:hover{
     border-radius: 5px;
 }
 
-
-
-
-
-
-
+.about-sec-p .card .card-title{
+  font-size: 2.5em;
+  font-weight: bold;
+}
 /* About Section End  */
 
 
+/* Volunteers Section Start  */
+.about-volunteer{
+  background-color: #f2f2f2;
+}
+/* Volunteers Section End */
 /* ============= About Us Page End ============= */
 
 
+/* ============= Home Modern Page Start ============= */
+.home-moden {
+  position: relative;
+  background-image: url(assets/mission.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 80px;
+}
+
+.home-moden .overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;         
+  color: white;     
+  padding-top: 150px; 
+}
+
+.home-moden .container-xxl{
+  padding: 140px 10px; 
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero-content h2, 
+.hero-content p {
+  color: #ffffff;     
+}
 
 
+.home-moden .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.home-moden .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.join{
+  color: var(--themeColor);
+}
+
+/* Get Envolved Section Start */
+.modern-get{
+  padding-top: 80px;
+  margin-bottom: 0px;
+}
+/* Get Envolved Section End */
+
+/* ============= Home Modern Page End ============= */
 
 
+/* ============= Event Page Start ============= */
+/* Join Section Start */
+.join-section{
+  background-image: url(./assets/event-page.png);
+  height: 300px; 
+}
+
+.join-section .container-xxl{
+  padding: 100px 20px; 
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.join-section .center-join{
+  display: flex;
+  gap: 200px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.join-section .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
+
+.join-section .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
+/* Join Section End */
+
+/* ============= Event Page End ============= */
 
 
+/* ============= Volunteers Page Start ============= */
+.volunteer-page{
+  margin-bottom: 0;
+}
+
+/* ============= Volunteers Page End ============= */
 
 
+/* ============= Page Not Found Start ============= */
+.hero-not{
+  padding: 100px 0;
+}
 
+.hero-not h2{
+  font-size: 120px;
+  font-weight: bold;
+}
 
+.black-hero{
+  color: #282828;
+  font-weight: bold;
+  font-size: 14px;
+}
 
+.hero-not .gray{
+  color: #555555;
+  font-size: 16px;
+}
 
+.hero-not .btn{
+    background-color: var(--themeColor) !important;
+    color: var(--whiteColor) !important;
+    padding: 10px 20px;
+}
 
+.hero-not .btn:hover{
+    background-color: var(--themeHoverColor) !important;
+    color: var(--whiteColor) !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hero-not .center-join{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* ============= Page Not Found End ============= */

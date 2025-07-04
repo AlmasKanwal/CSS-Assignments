@@ -320,3 +320,97 @@
 
 /* #################################################################### ALL PAGES OF WEBSITE RESPONSIVENESS #################################################################### */
 /* ============= About Us Page Start ============= */
+@media only screen and (max-width: 1000px){
+  .about-sec-p .card{
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+}
+/* ============= About Us Page End ============= */
+
+
+/* ============= Home Modern Page Start ============= */
+@media only screen and (max-width: 550px){
+  .home-moden .container-xxl{
+    padding: 90px 10px; 
+  }
+}
+
+@media only screen and (max-width: 373px){
+  .home-moden .container-xxl{
+    padding: 70px 10px; 
+  }
+}
+
+@media only screen and (max-width: 294px){
+  .home-moden .container-xxl{
+    padding: 50px 10px; 
+  }
+}
+
+@media only screen and (max-width: 981px){
+  .modern-get{
+  padding-top: 0px;
+  margin-bottom: 80px;
+}
+}
+/* ============= Home Modern Page End ============= */
+
+
+/* ============= Event Page Start ============= */
+@media only screen and (max-width: 1005px){
+  .join-section .center-join{
+    flex-direction: column;
+    gap: 0;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+
+  .join-section .container-xxl{
+    padding: 70px 10px; 
+  }
+}
+
+@media only screen and (max-width: 665px){
+  .join-section .container-xxl{
+    padding: 50px 10px; 
+  }
+}
+
+@media only screen and (max-width: 507px){
+  .join-section .container-xxl{
+    padding: 30px 10px; 
+  }
+}
+
+@media only screen and (max-width: 357px){
+  .join-section .container-xxl{
+    padding: 40px 10px; 
+  }
+
+  .events-join h2{
+    font-size: 2em;
+  }
+
+  .events-join p{
+    font-size: 15px;
+  }
+}
+/* ============= Event Page End ============= */
+
+
+/* ============= Page Not Found Start ============= */
+@media only screen and (max-width: 357px){
+  .hero-not h2{
+  font-size: 120px;
+  font-weight: bold;
+}
+}
+
+
+
+
+
+
+/* ============= Page Not Found End ============= */
