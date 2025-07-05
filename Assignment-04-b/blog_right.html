@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Right Sidebar | Charitify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+<!-- ============= Navbar Start ============= -->
+<header>
+  <!-- /////////// Top Navbar Start -->
+  <div class="top-nav-bg">
+    <div class="container-xxl d-flex justify-content-between sm-gap-3 top-nav py-3">
+        <div class="contact d-flex gap-3">
+            <div class="fa-solid fa-envelope d-flex align-items-center gap-2"> <div class="d-flex justify-content-center align-items-center">Info@YourDomain.com</div></div>
+            <div class="fa-solid fa-mobile-screen d-flex align-items-center gap-2"> <div class="d-flex justify-content-center align-items-center">+(333) 052 39876</div></div>
+        </div>
+        <div class="icons d-flex gap-3">
+            <div class="fa-brands fa-facebook-f"></div>
+            <div class="fa-brands fa-twitter"></div>
+            <div class="fa-brands fa-instagram"></div>
+            <div class="fa-brands fa-pinterest"></div>
+            <div class="fa-brands fa-linkedin-in"></div>
+        </div>
+    </div>
+  </div>
+  <!-- /////////// Top Navbar End -->
+
+
+  <!-- /////////// Bottom Navbar Start -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg justify-content-between">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/web-logo.png" alt="Website Logo" />
+      </a>
+      <button class="navbar-toggler tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarScroll">
+        <ul class="navbar-nav mx-auto me-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./index.html" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./home-default.html">Home Default</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./home_modern.html">Home Modern</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./causes.html">Causes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./event.html">Event</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./volunteers.html">Volunteers</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./not_found.html">404 Not Found</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./blog.html" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./blog.html">Blog Grid</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./blog_left.html">Blog Left Sidebar</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./blog_right.html">Blog Right Sidebar</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./blog_single.html">Blog Single</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+
+          <button class="btn" type="button">Donate Now</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /////////// Bottom Navbar End -->
+</header>
+<!-- ============= Navbar End ============= -->
+
+
+<!-- ============= Hero Section / Carousal Start ============= -->
+<section class="hero-sections about-hero contact-hero blog-left">
+    <div class="container-xxl">
+        <h2>Blog Right Sidebar</h2>
+        <p>Help today because tomorrow you may be the one who needs more helping!</p>
+        <div class="links-sec">
+            <a href="./index.html" class="a-1">HOME</a>
+            <span>/</span>
+            <a href="#" class="a-2">BLOG</a>
+        </div>    
+    </div>
+</section>
+<!-- ============= Hero Section / Carousal End ============= -->
+
+
+<!-- ============= Blog Section Start ============= -->
+<div class="lefty righty">
+    <div class="container-xxl">
+      <aside class="left-side-bar">
+
+        <div class="posts-search">
+          <h3>Search Posts</h2>
+          <div class="input-theme">
+            <input type="text" id="filter" placeholder="Type Here" aria-label="Filter sidebar">
+            <i class="fa-solid fa-magnifying-glass"></i>          
+          </div>
+        </div>
+
+        <div class="categories">
+          <h3>Categories</h3>
+          <p>Wed design <span>(2)</span></p>
+          <p>Graphics design <span>(4)</span></p>
+          <p>Wordpress <span>(7)</span></p>
+          <p>Joomla <span>(5)</span></p>
+          <p>Marketing <span>(3)</span></p>
+          <p>Music <span>(2)</span></p>
+        </div>
+
+        <div class="post-recent">
+          <h3>Recent Posts</h3>
+          <div class="post-box">
+            <img src="./assets/rel-post-1.jpg" alt="">
+            <div class="post-texts">
+              <p>Standard post</p>
+              <p class="p-color"><i class="fa-solid fa-clock"></i>  January 01.2018</p>
+            </div>
+          </div>
+
+          <div class="post-box">
+            <img src="./assets/rel-post-2.jpg" alt="">
+            <div class="post-texts">
+              <p>Standard post</p>
+              <p class="p-color"><i class="fa-solid fa-clock"></i>  January 01.2018</p>
+            </div>
+          </div>
+
+          <div class="post-box">
+            <img src="./assets/rel-post-3.jpg" alt="">
+            <div class="post-texts">
+              <p>Standard post</p>
+              <p class="p-color"><i class="fa-solid fa-clock"></i>  January 01.2018</p>
+            </div>
+          </div>
+
+          <div class="post-box">
+            <img src="./assets/rel-post-4.jpg" alt="">
+            <div class="post-texts">
+              <p>Standard post</p>
+              <p class="p-color"><i class="fa-solid fa-clock"></i>  January 01.2018</p>
+            </div>
+          </div>
+
+          <div class="post-box">
+            <img src="./assets/rel-post-5.jpg" alt="">
+            <div class="post-texts">
+              <p>Standard post</p>
+              <p class="p-color"><i class="fa-solid fa-clock"></i>  January 01.2018</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tags-post">
+          <h3>Tags</h3>
+          <div class="btns-post">
+            <button>Audio</button>
+            <button>Blog</button>
+            <button>Design</button>
+            <button>Magazine</button>
+            <button>Gallery</button>
+            <button>Creative</button>
+            <button>Post</button>
+            <button>Quotes</button>
+          </div>
+        </div>
+
+
+      </aside>
+
+      <section class="stories-sec blog-stories">
+      <div class="stories-center d-flex justify-content-center align-items-center flex-column">
+
+              <div class="card-group">
+                  <div class="card">
+                      <img src="assets/post-1.jpg" class="card-img-top img" alt="">
+                      <div class="card-body">
+                          <small><i class="fa-solid fa-clock"></i> January 01.2018</small>
+                          <h4 class="card-title">Standard gallery post</h4>
+                          <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
+                          <a href="#" class="card-text"><small class="a-col">Read More</small></a>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/post-2.jpg" class="card-img-top img" alt="">
+                      <div class="card-body">
+                          <small><i class="fa-solid fa-clock"></i>  January 01.2018</small>
+                          <h4 class="card-title">Blog post with couple photos</h4>
+                          <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
+                          <a href="#" class="card-text"><small class="a-col">Read More</small></a>
+                      </div>
+                  </div>
+              </div>    
+              
+              <div class="card-group"> 
+                  <div class="card">
+                      <img src="assets/post-3.jpg" class="card-img-top img" alt="">
+                      <div class="card-body">
+                          <small><i class="fa-solid fa-clock"></i>  January 01.2018</small>
+                          <h4 class="card-title">Charity Ever Rule the World?</h4>
+                          <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
+                          <a href="#" class="card-text"><small class="a-col">Read More</small></a>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/post-4.jpg" class="card-img-top img" alt="">
+                      <div class="card-body">
+                          <small><i class="fa-solid fa-clock"></i> January 01.2018</small>
+                          <h4 class="card-title">Blog post with couple photos</h4>
+                          <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
+                          <a href="#" class="card-text"><small class="a-col">Read More</small></a>
+                      </div>
+                  </div>
+              </div>   
+
+              <div class="card-group"> 
+                  <div class="card">
+                      <img src="assets/post-5.jpg" class="card-img-top img" alt="">
+                      <div class="card-body">
+                          <small><i class="fa-solid fa-clock"></i>  January 01.2018</small>
+                          <h4 class="card-title">Standard gallery post</h4>
+                          <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
+                          <a href="#" class="card-text"><small class="a-col">Read More</small></a>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="assets/post-6.jpg" class="card-img-top img" alt="">
+                      <div class="card-body">
+                          <small><i class="fa-solid fa-clock"></i>  January 01.2018</small>
+                          <h4 class="card-title">Blog post with couple photos</h4>
+                          <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
+                          <a href="#" class="card-text"><small class="a-col">Read More</small></a>
+                      </div>
+                  </div>
+              </div> 
+
+              <!-- Blog Btns -->
+              <div class="pagination">
+                  <button class="pagination-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                  <button class="pagination-btn">1</button>
+                  <button class="pagination-btn active">2</button>
+                  <button class="pagination-btn">3</button>
+                  <button class="pagination-btn"><i class="fa-solid fa-arrow-right"></i></button>
+              </div> 
+
+              </div>
+          </div>
+      </section>
+    </div>
+</div>
+<!-- ============= Blog Section End ============= -->
+
+
+<!-- ============= Widget Section Start ============= -->
+<section class="widget-sec py-6">
+  <div class="container-xxl">
+    <div class="widget-content d-flex">
+      <div class="widget-items">
+      <img src="./assets/logo-light.png" alt="">
+      <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor</p>
+      <div class="icons d-flex gap-3">
+        <a href="#" class="fa-brands fa-facebook-f"></a>
+        <a href="#" class="fa-brands fa-twitter"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
+        <a href="#" class="fa-brands fa-pinterest"></a>
+        <a href="#" class="fa-brands fa-linkedin-in"></a>
+      </div>
+    </div>
+
+    <div class="widget-items camp">
+      <h3>Recent Campaigns</h3>
+      <a href="#">First charity activity of this summer. -1 Year Ago</a>
+      <a href="#">Big charity: build school for poor children. -2 Year Ago</a>
+      <a href="#">Clean-water system for rural poor. -2 Year Ago</a>
+      <a href="#">Nepal earthqueak donation campaigns. -3 Year Ago</a>
+    </div>
+
+    <div class="widget-items">
+      <h3>Charitify Location</h3>
+      <p><i class="fa-solid fa-message"></i> Info@YourDomain.com</p>
+      <p><i class="fa-solid fa-mobile-screen"></i> +(333) 052 39876</p>
+      <p><i class="fa-solid fa-globe"></i> Www.YourWebsite.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> 60 Grand Avenue. Central New Road 0708, USA</p>
+    </div>
+    </div>
+
+  </div>
+</section>
+<!-- ============= Widget Section End ============= -->
+
+
+<!-- ============= Footer Start ============= -->
+<footer class="footer-sec">
+  <div class="container-xxl">
+    <div class="footer-items d-flex justify-content-between">
+      <p class=""><i class="fa-regular fa-copyright"></i> 2021 Charitify Powered by DynamicLayers</p>
+
+      <div class="footer-links d-flex gap-5">
+        <a href="#">Orders</a>
+        <a href="#">Terms</a>
+        <a href="#">Report Problem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ============= Footer End ============= -->
+
+
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CDN and JS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+<!-- Bootstrap JavaScript CDN Start -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JavaScript CDN End -->
+
+
+<!-- Nav Fixed Start -->
+<script>
+  const navbar = document.getElementById('mainNavbar');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 100) {
+      navbar.classList.add('fixed-nav');
+    } else {
+      navbar.classList.remove('fixed-nav');
+    }
+  });
+</script>
+<!-- Nav Fixed End -->
+
+
+<!-- Event Loop Start -->
+ <script>
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const cards = document.querySelectorAll('.slider-card');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let currentIndex = 0;
+  const isMobile = () => window.innerWidth <= 768;
+
+  function updateSlider() {
+    if (isMobile()) {
+      sliderWrapper.style.transform = `translateY(-${currentIndex * 100}%)`;
+    } else {
+      const cardWidth = cards[0].offsetWidth + 16;
+      sliderWrapper.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    updateSlider();
+  });
+
+  window.addEventListener('resize', updateSlider);
+</script>
+<!-- Event Loop End -->
+
+</body>
+</html>
